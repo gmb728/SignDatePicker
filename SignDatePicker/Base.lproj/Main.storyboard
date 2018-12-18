@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SignDatePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="9rw-qX-w6Z">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="556699377.27223003">
+                                    <!--2018-08-23 06:42:57 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="datePickerAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="3WA-f6-Agd"/>
+                                </connections>
+                            </datePicker>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LcM-hV-T8s">
+                                <rect key="frame" x="0.0" y="312" width="414" height="424"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g3X-Nh-s7q" userLabel="bg">
+                                <rect key="frame" x="0.0" y="208" width="414" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r3o-J5-a36">
+                                <rect key="frame" x="0.0" y="260" width="414" height="42"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qak-hS-NxW">
+                                <rect key="frame" x="0.0" y="226" width="414" height="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LcM-hV-T8s" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="3AH-nd-dOs"/>
+                            <constraint firstItem="9rw-qX-w6Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="899-bC-HXS"/>
+                            <constraint firstItem="r3o-J5-a36" firstAttribute="top" secondItem="qak-hS-NxW" secondAttribute="bottom" constant="10" id="CvZ-yt-GOC"/>
+                            <constraint firstItem="qak-hS-NxW" firstAttribute="trailing" secondItem="9rw-qX-w6Z" secondAttribute="trailing" id="JHj-Gr-mz0"/>
+                            <constraint firstItem="r3o-J5-a36" firstAttribute="trailing" secondItem="9rw-qX-w6Z" secondAttribute="trailing" id="PeE-an-cWt"/>
+                            <constraint firstItem="9rw-qX-w6Z" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="YM8-MH-QJY"/>
+                            <constraint firstItem="qak-hS-NxW" firstAttribute="top" secondItem="9rw-qX-w6Z" secondAttribute="bottom" constant="10" id="YqG-oS-Iow"/>
+                            <constraint firstItem="r3o-J5-a36" firstAttribute="leading" secondItem="9rw-qX-w6Z" secondAttribute="leading" id="bDU-O9-Z9C"/>
+                            <constraint firstItem="qak-hS-NxW" firstAttribute="leading" secondItem="9rw-qX-w6Z" secondAttribute="leading" id="dDt-zg-hGn"/>
+                            <constraint firstAttribute="bottom" secondItem="LcM-hV-T8s" secondAttribute="bottom" id="fqk-Px-vCY"/>
+                            <constraint firstItem="9rw-qX-w6Z" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oSJ-hO-gAq"/>
+                            <constraint firstItem="LcM-hV-T8s" firstAttribute="top" secondItem="r3o-J5-a36" secondAttribute="bottom" constant="10" id="ri7-o3-Z0r"/>
+                            <constraint firstItem="LcM-hV-T8s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ssH-bP-bvy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="goalTextField" destination="qak-hS-NxW" id="RdC-vL-zQP"/>
+                        <outlet property="imageView" destination="LcM-hV-T8s" id="ryH-Uf-LP0"/>
+                        <outlet property="myDatePickerValue" destination="9rw-qX-w6Z" id="e6H-f0-xRD"/>
+                        <outlet property="zodicTextField" destination="r3o-J5-a36" id="NRG-1w-DD6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1681.1594202898552" y="-527.44565217391312"/>
+        </scene>
+    </scenes>
+</document>
